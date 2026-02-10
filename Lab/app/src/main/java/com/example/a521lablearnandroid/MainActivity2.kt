@@ -43,6 +43,7 @@ class MainActivity2 : ComponentActivity() {
     }
 }
 
+
 @Composable
 fun Greeting2(name: String, modifier: Modifier = Modifier) {
     var inputText by remember { mutableStateOf(value = "") }
