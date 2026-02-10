@@ -19,7 +19,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.a521lablearnandroid.ui.theme.ListActivity
 
 class RPGCardActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -64,7 +63,7 @@ class RPGCardActivity : ComponentActivity() {
                         .align(Alignment.CenterHorizontally)
                         .padding(top = 16.dp)
                         .clickable() {
-                            startActivity(Intent(this@RPGCardActivity, MainActivity2::class.java))
+                            startActivity(Intent(this@RPGCardActivity, LifeCycleComposeActivity::class.java))
                         }
                 )
 

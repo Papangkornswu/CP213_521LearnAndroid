@@ -13,17 +13,24 @@
         android:theme="@style/Theme._521LabLearnAndroid"
         tools:targetApi="31">
         <activity
-            android:name=".ListActivity"
+            android:name=".MenuActivity"
+            android:exported="true"
+            android:label="@string/title_activity_list"
+            android:theme="@style/Theme._521LabLearnAndroid">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.theme.PokedexActivity"
             android:exported="false"
             android:label="@string/title_activity_list"
             android:theme="@style/Theme._521LabLearnAndroid" />
         <activity
-            android:name=".ui.theme.ListActivity"
-            android:exported="false"
-            android:label="@string/title_activity_list"
-            android:theme="@style/Theme._521LabLearnAndroid" />
-        <activity
-            android:name=".MainActivity2"
+            android:name=".LifeCycleComposeActivity"
             android:exported="true"
             android:label="@string/title_activity_main2"
             android:theme="@style/Theme._521LabLearnAndroid">
@@ -40,11 +47,7 @@
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme._521LabLearnAndroid">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
